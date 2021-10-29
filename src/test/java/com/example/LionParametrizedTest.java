@@ -12,7 +12,7 @@ public class LionParametrizedTest {
     private final boolean expected;
 
     public LionParametrizedTest(String sex, boolean expected){
-        this.sex =sex;
+        this.sex = sex;
         this.expected = expected;
     }
 
