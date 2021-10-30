@@ -1,19 +1,12 @@
 package com.example;
 
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
 public class FelineTest {
-   // private final static String FAMILY = "Кошачьи";
-   // private final static int KITTENS_COUNT = 1;
 
     @Test
     public void predatorShouldEatMeat() throws Exception {
