@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class LionParametrizedTest {
+
     private final String sex;
     private final boolean expected;
 
@@ -24,6 +25,7 @@ public class LionParametrizedTest {
         };
     }
 
+    //Метод проверяет, есть ли грива в зависимости от пола
     @Test
     public void doesHaveManeTrueAndFalse() throws Exception {
         Lion lion = new Lion(sex);

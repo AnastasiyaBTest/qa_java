@@ -5,8 +5,9 @@ import org.junit.Test;
 
 public class LionExceptionTest {
 
+    //Проверка исключения при создании льва с определенным полом
     @Test(expected = Exception.class)
-    public void LionWithOtherParamThrowsException() throws Exception{
+    public void lionWithOtherParamThrowsException() throws Exception{
         Lion lion = new Lion("Human");
     }
 

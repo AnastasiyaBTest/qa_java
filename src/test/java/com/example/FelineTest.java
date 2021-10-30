@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FelineTest {
 
+    //проверка, что кошачьи едят мясо
     @Test
     public void predatorShouldEatMeat() throws Exception {
         Feline feline = new Feline();
@@ -16,16 +17,18 @@ public class FelineTest {
         assertEquals(expected,actual);
     }
 
+    //проверка получения значения семейства
     @Test
-    public void shouldGetFamilyPredator() {
+    public void getFamilyForFeline() {
         Feline feline = new Feline();
         String actual = feline.getFamily();
         String expected = "Кошачьи";
         assertEquals(expected,actual);
     }
 
+    //проверка, получения определенного кол-во котят
     @Test
-    public void shouldGetKittensOne() {
+    public void getKittensForFeline() {
         Feline feline = new Feline();
         int actual = feline.getKittens();
         int expected = 1;

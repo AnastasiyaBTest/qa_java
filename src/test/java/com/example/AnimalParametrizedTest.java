@@ -28,6 +28,7 @@ public class AnimalParametrizedTest {
         };
     }
 
+    //проверка получения еды и для хищника и для травоядного
     @Test
     public void getFoodForPredatorAndHerbivore() throws Exception {
         Animal animal = new Animal();
