@@ -7,6 +7,9 @@ public class Alex extends Lion {
     public Alex() throws Exception {
         super("Самец");
     }
+    public Alex(boolean hasmane, Feline feline) throws Exception {
+        super(true, feline);
+    }
 
     @Override
     public int getKittens() {

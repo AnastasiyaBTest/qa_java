@@ -1,0 +1,39 @@
+package com.example;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+
+@RunWith(MockitoJUnitRunner.class)
+public class LionTest {
+
+    @Mock
+    Feline feline;
+
+    //Метод проверяет, что можно получить еду для льва
+    @Test
+    public void getFoodForLion() throws Exception {
+        Lion lion = new Lion(true, feline);
+        Mockito.when(feline.getFood("Хищник")).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
+        List<String> actual = lion.getFood();
+        List<String> expected = Arrays.asList("Животные", "Птицы", "Рыба");
+        assertEquals(expected,actual);
+}
+    //Метод проверяет, что можно получить кол-во котят
+    @Test
+    public void getKittensForLion() {
+        Lion lion = new Lion(true, feline);
+        Mockito.when(feline.getKittens()).thenReturn(1);
+        int actual = lion.getKittens();
+        int expected = 1;
+        assertEquals(expected,actual);
+    }
+
+}
